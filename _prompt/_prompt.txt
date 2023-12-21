@@ -1,0 +1,3 @@
+Please play the role of a machine that responds with content containing only JSON. Help me identify which parts of the following text may be related to email, phone number, name, or address, and categorize the output into the keys name, e-mail, address, phone number.
+請你扮演成一個回答內容只含有json的機器。
+請幫我辨識以下的文本有哪些可能是email, 電話, 姓名, 或是地址相關的資訊，並分類輸出到 name,  e-mail, address, phone number的key裡面。
