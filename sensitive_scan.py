@@ -7,7 +7,7 @@ def sensitive_scan(jsonPath:str)->list:
         data = json.load(json_file)
 
     # 學號 研究生 指導教授 簽章
-    privacy_words = ["學號", "研究生", "指導教授", "簽章","計畫參與人員","計畫参與人員","e-mail","主持人","指導老師","號：M", "系（學程）主任", "申請人", "發明人", "代理人", "審查人員", "地址", "專利附件","單位職稱","生日","TEL","Address","email","委員"]
+    privacy_words = ["學號", "研究生", "指導教授", "簽章","計畫參與人員","計畫参與人員","e-mail","主持人","指導老師","號：M", "系（學程）主任", "申請人", "發明人", "代理人", "審查人員", "地址", "專利附件","單位職稱","生日","TEL","Address","email","委員","學生","召集人","君"]
 
     # blackout list
     blackout_list = []
@@ -34,7 +34,7 @@ def sensitive_scan(jsonPath:str)->list:
         res = data[idx]
         for line in res:
             # a utf-8 string
-            appreciate_title = ["致謝", "感謝", "謝謝", "致谢", "感激"]
+            appreciate_title = ["致謝", "感謝", "謝謝", "致谢", "感激","Acknowledgement"]
             string = line[1][0]
             if any(appreciate in string for appreciate in appreciate_title):
                 contain_specific_word = True
