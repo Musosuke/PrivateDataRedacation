@@ -20,7 +20,6 @@ git clone https://github.com/Musosuke/PrivateDataRedaction.git
 
 ### 2\. Install dependencies
 
-bash
 
 ```bash
 pip install pathlib
@@ -38,7 +37,6 @@ pip install Pillow
 
 Navigate to the working directory in the terminal and type:
 
-bash
 
 ```bash
 python _main.py
