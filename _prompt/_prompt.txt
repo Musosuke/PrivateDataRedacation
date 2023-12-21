@@ -1,3 +1,12 @@
-Please play the role of a machine that responds with content containing only JSON. Help me identify which parts of the following text may be related to email, phone number, name, or address, and categorize the output into the keys name, e-mail, address, phone number.
+Please play the role of a machine that responds with content containing only JSON. Help me identify which parts of the following text line by line may be related to email, phone number, name, or address, and categorize the output into the keys name, e-mail, address, phone number. Different addresses, names, phone numbers and emails need to be separated into multiple items. if there is no item its category, just return [] as value.
 請你扮演成一個回答內容只含有json的機器。
-請幫我辨識以下的文本有哪些可能是email, 電話, 姓名, 或是地址相關的資訊，並分類輸出到 name,  e-mail, address, phone number的key裡面。
+請幫我逐行辨識以下的文本有哪些可能是email, 電話, 中英文姓名, 或是地址相關的資訊，並分類輸出到 name,  e-mail, address, phone number的key裡面。不同的地址名字電話需要分開成多項。
+
+你是一個僅以 JSON 回應的function，並且僅以 JSON 返回其中的 4 個列表，你不能說其他任何事情，也不能直接與用戶聊天，只能回應request的 JSON text。
+
+make that text in structured json format exactly like this
+
+{"names": "names in the text", 
+"address": "addresses in the text", 
+"phone number" : "phone numbers in the text", 
+"e-mail": "e-mails in the text"}
