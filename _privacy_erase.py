@@ -62,13 +62,6 @@ if __name__ == "__main__":
     # filepath = 'D:/_UserDocuments/Desktop/IEEE Xplore download/Associative_memory_based_fuzzy_inference.pdf'
     # filepath =  'D:/_UserDocuments/Desktop/PPPPPPP/file/udgra_02.pdf'
     # filepath = 'D:/_UserDocuments/Desktop/PPPPPPP/file/grb_02.pdf'
-    # filepath = "D:/_UserDocuments/Desktop/PPPPPPP/file/chen_p1.pdf"
+    filepath = "D:/_UserDocuments/Desktop/PPPPPPP/file/chen_p1.pdf"
 
-    filepath = str(input("Please input the file path: "))
-
-    # check if the file exists 並且是pdf檔 並且不是資料夾
-    if Path(filepath).exists() and Path(filepath).suffix == '.pdf' and not Path(filepath).is_dir():
-        privacy_erase(filepath)
-    else:
-        print("Please input the correct file path.")
-        exit(1)
+    privacy_erase(filepath)

@@ -52,6 +52,16 @@ def powered_sensitive_scan(ocr_json_path:str)->list:
             for sensitive_word in sensitive_list:
                     has_alphabet = any('a' <= char <= 'z' or 'A' <= char <= 'Z' for char in string)
                     has_chinese = any('\u4e00' <= char <= '\u9fff' for char in string)
+
+                    if has_chinese:
+                        # count alphabet in string
+                        alphabet_count = 0
+                        for char in string:
+                            if 'a' <= char <= 'z' or 'A' <= char <= 'Z':
+                                alphabet_count += 1
+                        if alphabet_count >= 3:
+                            has_alphabet = True
+
                     if sensitive_word in string:
                         startIndex = string.find(sensitive_word)
                         endIndex = startIndex + len(sensitive_word) 
