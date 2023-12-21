@@ -17,6 +17,7 @@ The PDF Privacy Eraser is a tool designed to remove sensitive information from P
 	https://github.com/Musosuke/PrivateDataRedacation.git
 	
 2. Install dependency
+```bash
 	pip install pathlib
 	pip install "paddleocr>=2.0.1"
 	pip install paddlepaddle -i https://mirror.baidu.com/pypi/simple
@@ -29,6 +30,7 @@ The PDF Privacy Eraser is a tool designed to remove sensitive information from P
 
 3. run
 enter working directory, open terminal, type:
+```bash
 	python _main.py
 
 4. input
