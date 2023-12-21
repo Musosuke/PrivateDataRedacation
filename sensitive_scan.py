@@ -7,7 +7,7 @@ def sensitive_scan(jsonPath:str)->list:
         data = json.load(json_file)
 
     # 學號 研究生 指導教授 簽章
-    privacy_words = ["學號", "研究生", "指導教授", "簽章","計畫參與人員","計畫参與人員","e-mail","主持人","指導老師"]
+    privacy_words = ["學號", "研究生", "指導教授", "簽章","計畫參與人員","計畫参與人員","e-mail","主持人","指導老師","號：M", "系（學程）主任", "申請人", "發明人", "代理人", "審查人員", "地址", "專利附件","單位職稱","生日","TEL","Address","email","委員"]
 
     # blackout list
     blackout_list = []

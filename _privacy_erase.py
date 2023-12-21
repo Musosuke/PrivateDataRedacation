@@ -62,6 +62,6 @@ if __name__ == "__main__":
     # filepath = 'D:/_UserDocuments/Desktop/IEEE Xplore download/Associative_memory_based_fuzzy_inference.pdf'
     # filepath =  'D:/_UserDocuments/Desktop/PPPPPPP/file/udgra_02.pdf'
     # filepath = 'D:/_UserDocuments/Desktop/PPPPPPP/file/grb_02.pdf'
-    filepath = "D:/_UserDocuments/Desktop/PPPPPPP/file/chen_p1.pdf"
+    filepath = "D:/_UserDocuments/Desktop/udgra_03.pdf"
 
     privacy_erase(filepath)
